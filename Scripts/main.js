@@ -26,8 +26,8 @@ function setTime(offset) {
 }
 
 window.onload = function(){
-  setTime("-7")
+  setTime("-8")
   var interval = setInterval(function() { 
-      setTime("-7")
+      setTime("-8")
   }, 10000);
 }
