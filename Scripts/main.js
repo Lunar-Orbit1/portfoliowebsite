@@ -1,3 +1,5 @@
+var currentTimeOffset = "-8"
+
 function discord(){
     var copyText = "claym1x"
     navigator.clipboard.writeText(copyText).then(function() {
@@ -26,8 +28,8 @@ function setTime(offset) {
 }
 
 window.onload = function(){
-  setTime("-7")
+  setTime(currentTimeOffset)
   var interval = setInterval(function() { 
-      setTime("-7")
+      setTime(currentTimeOffset)
   }, 10000);
 }
