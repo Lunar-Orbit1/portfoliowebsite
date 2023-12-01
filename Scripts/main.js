@@ -28,8 +28,8 @@ function setTime(offset) {
 }
 
 window.onload = function(){
-  setTime(currentTimeOffset)
+  setTime("-7")
   var interval = setInterval(function() { 
-      setTime(currentTimeOffset)
+      setTime("-7")
   }, 10000);
 }
