@@ -39,7 +39,12 @@ function setTime(offset) {
 }
 
 window.onload = function(){
+<<<<<<< HEAD
+  console.log("Loaded site. Version 3.0")
   setTime("-8")
+=======
+  setTime(currentTimeOffset)
+>>>>>>> 134cf3cfd9e00123097292b49d7622d97726b6f0
   var interval = setInterval(function() { 
       setTime(currentTimeOffset)
   }, 10000);
