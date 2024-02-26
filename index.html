@@ -5,118 +5,36 @@
         <link rel="icon" type = "image/x-icon" href="./Assets/Favicon.ico">
         <link rel="stylesheet" type = "text/css" href="./Scripts/styleMain.css">
         <script src="./Scripts/main.js"></script>
+        <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"/>
     </head>
     <body>
-        <img style="margin: auto; display: block;" src="./Assets/MainLogo.png">
-        <div class="subtitleContainer" style="margin-top: 0em;">
-            <span id="one" class="inner1">///</span>
-            <span id="two" class="inner2"> About me</span>
-            <span id="three" class="inner1">\\\</span>
-        </div>
+        <div class="snow">
+            <div></div>
+          </div>
+        <img id="pfp" style="margin: auto; display: block; border-radius: 360px; margin-top: 5em;" src="./Assets/pfp.png" height="300em">
+        <h1 style="text-align: center;">Claym1x</h1>
+        <h3 style="text-align: center; color: #666; font-weight: 100;">She/Her</h3>
+        <h3 id="LOCALCURRENTTIMEFOREMMA" style="text-align: center; color: #666; font-weight: 100;">UTC -8 ()</h3>
+        
         <div class="mainContent">
             <p class="paraText">
-                Hi there! I am Clay/Emma, whatever you prefer to call me or already know me as. I am a girl and go by she/her.<br>
- I am a comp-sci nerd with around a million different interests, such as theatrical lighting design, sci-fi, maritime, etc.<br>
- I usually am not too talkative, and rarely, if ever use voice chat. I am generally pretty busy, especially during the fall/spring due to theater productions. <br>
-I live outside of San Fransisco, so I am on PST time. <br>
-if you would like to contact me, please scroll to the bottom of this page and find my contact section
+                Hello! I'm Emma, also known as Clay. I do software development, mostly focusing on Roblox games, websites, and Discord bots. <br>
+                I also partake in <a href="./portfolio/photography.html">"""professional""" photography</a> as a hobby, along with electrical engineering and theatrical lighting design.
             </p>
-        </div>
-        <div class="subtitleContainer">
-            <span id="one" class="inner1">///</span>
-            <span id="two" class="inner2"> Development</span>
-            <span id="three" class="inner1">\\\</span>
-        </div>
-        <div class="mainContent">
             <p class="paraText">
-                I mostly work on Roblox game development. For the most part I do scripting, however I can also do building, sound/lighting design, and ui work fairly well. <br>
-                I sometimes will do commissions, if you would like one please dm me on Discord<br><b>I DO NOT WORK FOR FREE</b><br>
-                Outside of roblox, I work mainly with python in web applications, such as Discord bots. I also work sparingly with html, css, and js <br>
-                I don't really like formality when working, so do not feel the need to maintain a 'professional' atmosphere around me
+                You can contact me via <a style="color: var(--Secondary); cursor: pointer;" onclick="discord()">Discord.</a> Other than Discord, I do not accept random friend requests or messages
+
             </p>
-        </div>
-        <div class="subtitleContainer">
-            <span id="one" class="inner1">///</span>
-            <span id="two" class="inner2"> Portfolio</span>
-            <span id="three" class="inner1">\\\</span>
-        </div>
-        <div class="mainContent">
             <p class="paraText">
-                To view my portfolio, along with my past projects and a few hobbies, please click one of the buttons below
+                I do occasionally do comissions, but please be aware that I <b>do not work for free</b> and that I am <b>busy irl</b>, so it may take time.
             </p>
-                    <a class="linkButton" href="./portfolio.html" style="margin-left: 37%; margin-bottom: 10px;">
-                    <button style="background-color: rgb(116, 116, 116); font-size: 100%;">Portfolio</button></a>
-                    <br><br>
-                    <a class="linkButton" href="./photography.html" style="margin-left: 37%; margin-bottom: 10px;">
-                        <button style="background-color: rgb(116, 116, 116); font-size: 100%;">Photography</button></a>
-                        <br><br>
+            <a class="linkButton" href="./portfolio.html" style="margin-left: 37%; margin-bottom: 10px;">
+                Portfolios
+            </a>
+            <a class="linkButton" href="./contacts.html" style="margin-left: 37%; margin-bottom: 10px;">
+                Contact Me
+            </a>
         </div>
-        <div class="subtitleContainer">
-            <span id="one" class="inner1">///</span>
-            <span id="two" class="inner2"> Contacts</span>
-            <span id="three" class="inner1">\\\</span>
-        </div>
-        <div class="mainContent" style="margin-bottom: 5em;">
-            <p class="paraText">
-                Here are my social media accounts/contact information if required.<br>
-                I do not accept random friend requests outside of Discord. I also can not respond instantly. I will get back to you as soon as I can
-            </p>
-            <ul class="socialButtons" style="padding-bottom: 10px; list-style: none; margin: auto;" > <!--I really don't like this part, can't be bothered enough to make it look clean. It works though ^w^-->
-                <li style="margin-left: 41%; padding-bottom: 10px;">
-                    <img style="position: absolute; float: right; margin: auto -60px;" height="50px" width="50px" src="./Assets/discord-logo.png">
-                    <a class="linkButton" onclick="discord()" target="_blank">
-                    <button style="background-color: #5865F2; font-size: 100%;">Discord User</button></a>
-                </li>
-                <li style="margin-left: 41%; padding-bottom: 10px;">
-                    <img style="position: absolute; float: right; margin: auto -60px;" height="50px" width="50px" src="./Assets/robloxIcon.png">
-                    <a class="linkButton" href="https://www.roblox.com/users/767877034/profile" target="_blank">
-                    <button style="background-color: rgb(116, 116, 116); font-size: 100%;">Roblox</button></a>
-                </li>
-                <li style="margin-left: 41%; padding-bottom: 10px;">
-                    <img style="position: absolute; float: right; margin: auto -60px;" height="50px" width="50px" src="./Assets/studio-logo.png">
-                    <a class="linkButton" href="https://create.roblox.com/talent/creators/767877034" target="_blank">
-                    <button style="background-color: rgb(116, 116, 116); font-size: 100%;">Talent Hub</button></a>
-                </li>
-                <li style="margin-left: 41%; padding-bottom: 10px;">
-                    <img style="position: absolute; float: right; margin: auto -60px;" height="50px" width="50px" src="./Assets/studio-logo.png">
-                    <a class="linkButton" href="https://devforum.roblox.com/u/claym1x/summary" target="_blank">
-                    <button style="background-color: rgb(116, 116, 116); font-size: 100%;">Devforum</button></a>
-                </li>
-                <li style="margin-left: 41%; padding-bottom: 10px;">
-                    <img style="position: absolute; float: right; margin: auto -60px;" height="50px" width="50px" src="./Assets/youtube-logo.png">
-                    <a class="linkButton" href="https://www.youtube.com/channel/UCdJYBuVQSkkZRvDqFhjO-nA" target="_blank">
-                    <button style="background-color: rgb(255, 0, 0); font-size: 100%;">Youtube</button></a>
-                </li>
-                <li style="margin-left: 41%; padding-bottom: 10px;">
-                    <img style="position: absolute; float: right; margin: auto -60px;" height="50px" width="50px" src="./Assets/twitter-logo.png">
-                    <a class="linkButton" href="https://twitter.com/clay_potato" target="_blank">
-                    <button style="background-color: rgb(102, 201, 240); font-size: 100%;">Dumb bird (inactive)</button></a>
-                    <p style="font-size: xx-small;"><i>No i'm not calling it x</i></p>
-                </li>
-                <li style="margin-left: 41%; padding-bottom: 10px;">
-                    <img style="position: absolute; float: right; margin: auto -60px;" height="50px" width="50px" src="./Assets/tiktok-logo.png">
-                    <a class="linkButton" href="https://www.tiktok.com/@claym1x" target="_blank">
-                    <button style="background-color: #FE2C55; font-size: 100%;">Tiktok</button></a>
-                </li>
-            </ul>    
-        </div>
-        <div class="subtitleContainer">
-            <span id="one" class="inner1">///</span>
-            <span id="two" class="inner2"> FAQ</span>
-            <span id="three" class="inner1">\\\</span>
-        </div>
-        <div class="mainContent">
-            <p class="paraText">
-                Here are some questions I can foresee being asked.
-            </p>
-            <h3 style="padding-left: 1em;">Q: How often can you work</h3>
-            <h4 style="padding-left: 3em;">A: Around 2-3 hours a weekday, 4-5 on a weekend. It depends on if I am busy </h4>
-            <hr style="width: 95%; height: 3px; background-color: #ff82f9; border: none;">
-            <h3 style="padding-left: 1em;">Q: What time is it for you right now</h3>
-            <h4 style="padding-left: 3em;" id="LOCALCURRENTTIMEFOREMMA">A: 00:00 </h4>
-            <hr style="width: 95%; height: 3px; background-color: #ff82f9; border: none;">
-            <h3 style="padding-left: 1em;">Q: What things do you like scripting</h3>
-            <h4 style="padding-left: 3em;">A: Usually stuff like UI, admin systems, gamepasses, etc </h4>
-        </div>
+        
     </body>
 </html>

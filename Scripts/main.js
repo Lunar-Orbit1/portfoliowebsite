@@ -2,9 +2,9 @@ function discord(){
     var copyText = "claym1x"
     navigator.clipboard.writeText(copyText).then(function() {
       console.log('Async: Copying to clipboard was successful!');
-      alert("Copied user to clipboard!")
+      alert("Copied Discord username to clipboard")
     }, function(err) {
-    alert("Error while copying, contact Clay. Error text: ",err)
+    alert("Error while copying user to clipboard, contact Clay. Error text: ",err)
       console.error('Async: Could not copy text: ', err);
     });
 }
@@ -21,11 +21,12 @@ function setTime(offset) {
       mins = `0${mins}`;
   }
 
-  var setD = `A: ${hrs}:${mins}`;
+  var setD = `UTC -8 (${hrs}:${mins})`;
   document.getElementById("LOCALCURRENTTIMEFOREMMA").innerHTML = setD;
 }
 
 window.onload = function(){
+  console.log("Loaded site. Version 3.0")
   setTime("-8")
   var interval = setInterval(function() { 
       setTime("-8")
