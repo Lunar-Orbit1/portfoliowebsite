@@ -137,7 +137,7 @@ and (max-device-width : 1024px) {
     margin: auto;
     padding: 0px;
 }
-#imageScroll img {
+#imageScroll img, #imagescroll video {
     width: 90%;
     margin-left: 5%;
 }
