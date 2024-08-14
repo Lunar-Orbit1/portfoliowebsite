@@ -1,0 +1,153 @@
+:root{
+    --Highlight: #43bf9b;
+    --BG: #030503;
+    --Font-Secondary: MS UI Gothic,windows font,nec_apc3,Tahoma; 
+}
+@font-face {
+    font-family: "VCR OSD Mono";
+    src: url(/assets/VCR_OSD_MONO_1.001.ttf) format("truetype");
+}
+@font-face {
+    font-family: "Windows Font";
+    src: url(/assets/MS-UIGothic.ttf) format("truetype");
+}
+
+
+html{
+    font-size: 16px;
+}
+
+body{
+    background-color: var(--BG);
+    background-image: url("/assets/bgtexture.png");
+    filter: opacity(90);
+    overflow-x:hidden;
+    margin: 0;
+}
+
+a{
+    color: #fff;
+    border-bottom: 1px dashed #fff; /*jenky!*/
+    text-decoration: none;
+}
+
+ul{
+    color: var(--Highlight);
+    list-style:square;
+    padding-left: 15px;
+}
+li{
+    margin-top: 3px;
+    color:#fff;
+    font-family: var(--Font-Secondary);
+}
+
+h1{
+    color: var(--Highlight);
+    font-family: 'VCR OSD Mono';
+    margin-top: 5px;
+}
+h2,h3{
+    color: #fff;
+    font-family: 'VCR OSD Mono';
+}
+p{
+    color: #fff;
+    font-family: var(--Font-Secondary);
+    font-weight: 50;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.mainbody{
+    display: grid;
+    width: 90%;
+    margin: auto;
+    grid-template-columns: subgrid;
+}
+.container{
+    background: none;
+    border: 2px solid var(--Highlight);
+    border-radius: 6px;
+    padding: 10px;
+    margin: 5px;
+}
+/*Also my gf was being really cool and was talking to me when I was struggling with this :3 */
+
+.buttongrid{
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-rows: none;
+    width: 100%;
+}
+.buttongrid a{
+    border: none;
+}
+.classicbtn{
+    display: inline;
+    padding: 2px;
+    border: none;
+    height: 33px;
+    width:88px;
+}
+.btn1{
+    border: 2px var(--Highlight) solid;
+    font-family: var(--Font-Secondary);
+    text-wrap: nowrap;
+    width: fit-content;
+    padding:10px;
+    transition-duration: 100ms;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+.btn1:hover{
+    cursor: pointer;
+    background: var(--BG);
+    filter: brightness(150%);
+}
+u{
+    color: var(--Highlight);
+}
+
+.projectcard{
+    border: 2px solid var(--Highlight);
+    padding: 10px;
+    width: 95%;
+    border-radius: 6px;
+    transition-duration: 500ms;
+}
+.projectcard:hover{
+    border-color: #fff;
+}
+
+  /* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+    /*Style*/
+    #cont2, #cont3, #cont1{
+        width: 90%;
+    }
+    .container{
+        display: block;
+        margin-bottom: 1em;
+    }
+    .mainbody{
+        display: block;
+    }
+    .ytembed{
+        width: 90%;
+    }
+}
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+    /*Style*/
+}
+
+.intro{
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}

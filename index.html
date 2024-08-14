@@ -1,41 +1,122 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Claym1x</title>
-        <link rel="icon" type = "image/x-icon" href="./Assets/Favicon.ico">
-        <link rel="stylesheet" type = "text/css" href="./Scripts/styleMain.css">
-        <script src="./Scripts/main.js"></script>
+        <title>Claym1x's lounge</title>
+        <link rel="stylesheet" type="text/css" href="/style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-
+        <script src="/copier.js"></script>
     </head>
     <body>
-        <div class="snow">
-            <div></div>
-          </div>
-        <img id="pfp" style="margin: auto; display: block; border-radius: 360px; margin-top: 5em;" src="./Assets/pfp.png" height="300em">
-        <h1 style="text-align: center;">Claym1x</h1>
-        <h3 style="text-align: center; color: #666; font-weight: 100;">She/Her</h3>
-        <h3 id="LOCALCURRENTTIMEFOREMMA" style="text-align: center; color: #666; font-weight: 100;">UTC -8 ()</h3>
-        
-        <div class="mainContent">
-            <p class="paraText">
-                Hello! I'm Emma, also known as Clay. I do software development, mostly focusing on Roblox games, websites, and Discord bots. <br>
-                I also partake in <a href="./portfolio/photography.html">"""professional""" photography</a> as a hobby, along with electrical engineering and theatrical lighting design.
-            </p>
-            <p class="paraText">
-                You can contact me via <a style="color: var(--Secondary); cursor: pointer;" onclick="discord()">Discord.</a> Other than Discord, I do not accept random friend requests or messages
-
-            </p>
-            <p class="paraText">
-                I do occasionally do comissions, but please be aware that I <b>do not work for free</b> and that I am <b>busy irl</b>, so it may take time.
-            </p>
-            <a class="linkButton" href="./portfolio.html" style="margin-left: 37%; margin-bottom: 10px;">
-                Portfolios
-            </a>
-            <a class="linkButton" href="./contacts.html" style="margin-left: 37%; margin-bottom: 10px;">
-                Contact Me
-            </a>
+        <div class="mainbody">
+            <div class="container" >
+                <div class="intro">
+                    <img src="/assets/pfp.png" height="300em" style="image-rendering: pixelated; border-radius: 360px;" title="My profile picture, made by my amazing gf <3">
+                    <h3>Emma / Claym1x</h3>
+                    <p>She/her</p>
+                    <p id="clocktime">10:00 (UTC -8)</p>
+                </div>
+                <h1>Welcome!</h1>
+                <p>Hi there, thanks for stopping by! I'm Emma, my username across all platforms is Claym1x. I'm a girl who likes to do nerdy things like computer science, photography, theater and engineering. This is the 4th version of this website, and in my opinion the best!</p>
+                <h1 style="margin-top: 1em;">Contact</h1>
+                <p>You can contact me basically anywhere, my username is the same across most platforms. I won't usually accept friend requests if I do not know you outside of Discord</p>
+                <br>
+                <a id="dbutton" class="btn1">Discord</a> <a href="https://unsplash.com/@claym1x" target="_blank" class="btn1">Unsplash</a> <a href="https://www.roblox.com/users/767877034/profile" target="_blank" class="btn1">Roblox</a> <a href="https://www.youtube.com/@Claym1x" target="_blank"  class="btn1">Youtube</a>
+                <h1 style="margin-top: 1em;">About me</h1>
+                <p>I do a lot of things and I like a lot of things</p>
+                <ul>
+                    <li>I do photography</li>
+                    <li>I like electronics and computers</li>
+                    <li>I have an interest in weather and aviation</li>
+                    <li>I'm a total theater kid, I do lighting design. Crewhead for lighting at my school's theater</li>
+                    <li>Very fucking stupid</li>
+                    <li>Asexual/lesbian</li>
+                    <li>Sucks at css/html/js</li>
+                    <li>Primarily program in Python and Lua/Luau</li>
+                    <li>Roblox developer (in free time)</li>
+                    <li>Discord bot developer</li>
+                    <li>Metal head</li>
+                    <p><i>Metallica, Sabaton, SOAD, etc..</i></p>
+                    <li>Linux user (lubuntu, raspberrypi, arch*, mint*)</li>
+                    <p><i>* Used in past, not currently using. Lubuntu is my daily driver</i></p>
+                    <li>Can't spell for SHIT</li>
+                </ul>
+                
+            </div>
+            <div class="container">
+                <h1 style="height: fit-content;">Projects</h1>
+                <p style="height: fit-content;">I love working and tinkering on projects. Here are a couple of my past projects I have worked on or contributed on</p>
+                <ul class="projectList" style="list-style: none;">
+                    <li class="projectcard">
+                        <h2 style="margin-bottom: 5px;"><a target="_blank" href="https://www.roblox.com/games/7050556755">Roblox - Noob Tower Defense</a></h2>
+                        <ul>
+                            <li>Programmer/bot developer</li>
+                            <li>3+ million visits (as of July 2024)</li>
+                            <li>Started work early June 2024</li>
+                            <li>Contributed to bug fixes, small in-game content features</li>
+                        </ul>
+                    </li>
+                    <li class="projectcard">
+                        <h2 style="margin-bottom: 5px;"><a target="_blank" href="https://www.roblox.com/groups/11370130/Hardware-Productions#!/about">Roblox - Hardware Productions</a></h2>
+                        <ul>
+                            <li>Developer</li>
+                            <li>30+ thousand member group (as of July 2024)</li>
+                            <li>Developed an anti-wall spam bot, filters out scam messages/generic "paste this here for free Robux" messages</li>
+                            <img src="/assets/project_images/02_1.png" width="40%"><br>
+                            <img src="/assets/project_images/02_2.png" width="40%">
+                        </ul>
+                    </li>
+                    <li class="projectcard">
+                        <h2 style="margin-bottom: 5px;"><a target="_blank" href="https://www.roblox.com/games/13082003016/Horizon-Reactor-Core-UPDATE">Roblox - Horizon Reactor Core</a></h2>
+                        <ul>
+                            <li>Lead developer/chairwoman for Horizon labs Inc</li>
+                            <li>Science fiction core game on Roblox i'm developing</li>
+                            <li>Features a full anti cheat, alt account detection, and custom administration systems</li>
+                        </ul>
+                    </li>
+                    <li class="projectcard">
+                        <h2 style="margin-bottom: 5px;"><a target="_blank" href="https://www.roblox.com/groups/11370130/Hardware-Productions#!/about">Discord - Astr</a></h2>
+                        <ul>
+                            <li>Depricated Discord bot for Horizon Labs Inc.</li>
+                            <li>Written in Python with Discord.py</li>
+                            <img src="/assets/project_images/04_1.png" width="40%"><br>
+                            <img src="/assets/project_images/04_2.png" width="40%"><br>
+                            <img src="/assets/project_images/04_3.png" width="40%"><br>
+                        </ul>
+                    </li>
+                    <li class="projectcard">
+                        <h2 style="margin-bottom: 5px;">Discord - Artemis</h2>
+                        <ul>
+                            <li>Custom Discord bot I made</li>
+                            <li>Written in Python with Discord.py</li>
+                            <img src="/assets/project_images/03_1.png" width="40%"><br>
+                            <img src="/assets/project_images/03_2.png" width="40%"><br>
+                            <img src="/assets/project_images/03_3.png" width="40%"><br>
+                            <img src="/assets/project_images/03_4.png" width="40%">
+                        </ul>
+                    </li>
+                    <li class="projectcard">
+                        <h2 style="margin-bottom: 5px;">Discord/Roblox - Omega Verification</h2>
+                        <ul>
+                            <li>Discord to Roblox verification system</li>
+                            <li>Name has changed quite a bit. It's currently under the name Argon but when this was made it went by Omega</li>
+                            <iframe class="ytembed" width="560" height="315" src="https://www.youtube.com/embed/ZegX0dzXC4k?si=KGvL9sQEnY0h3F-H" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="container">
+                <h1>Photography</h1>
+                <p>I do photography as a hobby with my cameras. You can see my work on <a href="https://unsplash.com/@claym1x" target="_blank">my Unsplash account</a></p>
+                <p>I like taking pictures of nature, public infrastructure, and public transit (specifically planes/trains)</p>
+                <p>Some of my pictures have been featured in news articles, such as <a href="https://unsplash.com/photos/power-lines-and-telephone-poles-with-a-mountain-in-the-background-pUsLi19_Czs" target="_blank">this one</a></p>
+                <p><i>https://cyberinfosecx.medium.com/role-of-cyberspace-in-safeguarding-critical-infrastructure-heres-what-i-learned-6c2d6a11530d, <br>https://sfist.com/2024/02/23/pge-profits-soar-after-rate-hikes/,<br> https://www.fmmedia.com.au/sectors/cybersecurity-for-critical-infrastructure-set-to-tighten-in-2024/<br>https://power.eventhive.ng/<br> </i></p>
+                <h3>Camera stuff</h3>
+                <ul>
+                    <li>Cameras: Nikon D60, Nikon D7200</li>
+                    <li>Lenses: 18-55mm nikkor, 55mm-200mm nikkor, 75-300mm nikkor</li>
+                    <li>Tripod (That I rarely use)</li>
+                </ul>
+            </div>
         </div>
-        
     </body>
 </html>
