@@ -151,3 +151,17 @@ and (max-device-width : 1024px) {
     width: 50%;
     text-align: center;
 }
+.projectSelector{
+    width: 90%;
+    margin: auto;
+}
+.projectBtn{
+    display: inline-block;
+    border: 2px solid #ffffff00;
+    padding: 10px;
+    transition-duration: 500ms;
+    cursor: pointer;
+}
+.projectBtn:hover{
+    border: 2px solid #43bf9b; ;
+}

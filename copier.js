@@ -1,4 +1,4 @@
-const currentTimeOffset = "-8";
+const currentTimeOffset = "-7";
 document.addEventListener("DOMContentLoaded", function(){
     const discordBtn = document.getElementById("dbutton")
     discordBtn.addEventListener("click", function(){
@@ -18,7 +18,7 @@ function setTime(offset) {
         mins = `0${mins}`;
     }
   
-    var setD = `${hrs}:${mins} (UTC -8)`;
+    var setD = `${hrs}:${mins} (UTC ${currentTimeOffset})`;
     document.getElementById("clocktime").innerHTML = setD;
   }
 
