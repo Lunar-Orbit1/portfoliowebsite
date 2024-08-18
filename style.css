@@ -112,7 +112,7 @@ u{
 .projectcard{
     border: 2px solid var(--Highlight);
     padding: 10px;
-    width: 95%;
+    width: calc(95% - 10px);
     border-radius: 6px;
     transition-duration: 500ms;
 }
