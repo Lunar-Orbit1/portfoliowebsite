@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Audio Library</title>
+        <link rel="stylesheet" type="text/css" href="/style.css">
+        <link rel="stylesheet" type="text/css" href="/library.css">
+        <script src="library.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="robots" content="index, follow, noarchive">
+        <meta name="description" content="List of good quality audios to use in PBCC">
+        <meta content="#ef78ff" data-react-helmet="true" name="theme-color" />
+    </head>
+    <body>
+        <div class="mainbody">
+            <div class="container" >
+                <h1>Audio Library</h1>
+                <p>This is a library full of audios to use in PBCC, either on the boombox or for events</p>
+                <div class="filters">
+                    <input id="search" placeholder="Search">
+                    <button class="filterBtn">Lyrics</button>
+                    <button class="filterBtn">No Lyrics</button>
+                    <button class="filterBtn">PBCC Audio</button>
+                </div>
+                <hr style="border: var(--Highlight) 1px solid;">
+                <div id="audiolist">
+                    <div class="audioItem">
+                        <p style="display:inline-block;">name</p>
+                        <button class="open" title="Open in Roblox"></button>
+                        <button class="favorite"title="Click to favorite"></button>
+                        <button class="share" title="Copy share link"></button>
+                        <button class="copy" title="Copy ID to clipboard"></button>
+                        <h3>Audio ID</h3>
+                        <p style="display: inline-block;">Tags, tags, tags</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="popup">
+            <h3 id="ptitle">Title!</h3>
+            <p id="ptext">Text!</p>
+            <div id="pdur"></div>
+        </div>
+    </body>
+</html>
