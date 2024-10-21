@@ -46,6 +46,7 @@ def ask():
                 })
                 dump(jsondata, f)
                 f.close()
-                
-            else:
-                ask()
+    
+    ask()
+
+ask()

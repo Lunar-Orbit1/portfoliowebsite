@@ -87,3 +87,11 @@
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 }
+
+#audiolist{
+    max-height: 25em;
+    overflow-y: scroll;
+}
+.container{
+    height: fit-content;
+}

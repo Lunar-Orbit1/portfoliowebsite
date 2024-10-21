@@ -23,6 +23,7 @@ body{
     filter: opacity(90);
     overflow-x:hidden;
     margin: 0;
+    width: 100%;
 }
 
 a{

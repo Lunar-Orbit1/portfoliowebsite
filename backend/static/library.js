@@ -6,10 +6,21 @@ function notify(title, text, duration){
     document.getElementById("ptext").innerHTML = text
     document.getElementById("pdur").style.width = "calc(100% + 10px)"
 }
+
+function convertListToString(list){
+    var ns = ""
+    for (var item in list){
+        ns = ns+`${list[item]}, `;
+    }
+    return ns.slice(0, -2);
+}
+
 var audioListContainer;
 function newListItem(Name, ID, Tags, favorited){
     var div = document.createElement('div')
     div.className = "audioItem";
+    div.setAttribute('audioId', toString(ID))
+
     var nameBlock = document.createElement("p");
     nameBlock.style.display='inline-block';
     nameBlock.innerHTML = Name;
@@ -35,12 +46,21 @@ function newListItem(Name, ID, Tags, favorited){
     openBtn.title = "Copy ID to clipboard";
     div.appendChild(openBtn);
 
+    var nameBlock = document.createElement("h3");
+    nameBlock.innerHTML = ID;
+    div.appendChild(nameBlock);
+
+    var nameBlock = document.createElement("p");
+    nameBlock.style.display='inline-block';
+    nameBlock.innerHTML = convertListToString(Tags);
+    div.appendChild(nameBlock); 
+
     audioListContainer.appendChild(div)
 }
 
 document.addEventListener("DOMContentLoaded", function(){
     // define elements
-    audioListContainer = document.getElementById("audioList")
+    audioListContainer = document.getElementById("audiolist")
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
     const audioid = urlParams.get('id');
@@ -52,7 +72,10 @@ document.addEventListener("DOMContentLoaded", function(){
     Http.responseType = "json";
     Http.onload = () => {
     if (Http.readyState == 4 && Http.status == 200) {
-        console.log(Http.response);
+        audios = Http.response['data'];
+        for (var i in Http.response['data']){
+            newListItem(audios[i]['name'], audios[i]['id'], audios[i]['tags'])
+        }
     } else {
         notify("Error", "Failed to fetch audios :(", 10)
     }
