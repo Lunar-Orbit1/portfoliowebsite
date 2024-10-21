@@ -1,0 +1,89 @@
+#search{
+    background: var(--BG);
+    border: var(--Highlight) 2px solid;
+    border-radius: 6px;
+    color: #fff;
+    height: 2em;
+    width: 50%;
+}
+.filterBtn{
+    background: var(--BG);
+    border: var(--Highlight) 2px solid;
+    border-radius: 6px;
+    color: #fff;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    width: auto;
+    transition-duration: 300ms;
+}
+.filterBtn:hover{
+    cursor: pointer;
+    background: #152215;
+    border: 2px solid #fff;
+}
+.filterBtn:active{
+    border: 2px solid #fff;
+}
+.audioItem{
+    border: 2px solid var(--Highlight);
+    border-radius: 6px;
+    padding: 10px;
+    background-size: cover;
+    margin-bottom: 10px;
+}
+.audioItem h3, p, button{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.copy, .open, .share, .favorite{
+    aspect-ratio: 1 / 1;
+    height: 1.9em;
+    padding: 5px;
+    display: inline;
+    float: right;
+    border: none;
+    cursor: pointer;
+}
+.copy{
+    background: url("/static/copy.svg");
+}
+.favorite{
+    background: url("/static/star.svg");
+}
+.favorite[sel='1']{
+    background: url("/static/bookmarkadded.svg");
+}
+.favorite:hover{
+    background: url("/static/star_full.svg");
+}
+.open{
+    background: url("/static/open.svg");
+}
+.share{
+    background: url("/static/share.svg");
+}
+
+#popup{
+    position: fixed;
+    right: -12em;
+    bottom: 10px;
+    background-color: #152215;
+    width: 10em;
+    height: fit-content;
+    padding: 5px;
+    border-radius: 5px;
+    transition-duration: 500ms;
+}
+#ptitle{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+#pdur{
+    width: calc(100% + 10px);
+    background-color: var(--Highlight);
+    height: 3px;
+    margin-left: -5px;
+    margin-bottom: -5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}

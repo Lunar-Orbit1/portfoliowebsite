@@ -68,13 +68,17 @@ limiter = Limiter(
     default_limits=["5 per minute"],
     storage_uri="memory://",
 )
-@app.route('/getids', methods = ['GET', 'OPTIONS'])
-@limiter.limit("10 per minute")
+@app.route('/getids', methods = ['GET', 'OPTIONS', 'POST'])
 @crossdomain(origin='*')
 def get_data():
     fp = open('backend/audiolist.json', 'r')
     data = load(fp)
     return {"data": data['audios']}, 200
+
+@app.route('/')
+@crossdomain(origin='*')
+def home():
+    return render_template('audios.html')
 
 if __name__ == '__main__':
     app.run(debug=False, host="0.0.0.0")
