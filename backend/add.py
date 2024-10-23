@@ -2,10 +2,11 @@ from json import load, dump
 from requests import get 
 
 def getData(id):
-    req = get(f'https://economy.roblox.com/v2/assets/{id}/details')
+    req = get(f'https://economy.roblox.com/v2/developer-products/{id}/info')
     if req.status_code == 200:
         return req.json()
     else:
+        print(req.status_code)
         return None
 
 def yorno(question):
@@ -27,12 +28,12 @@ def getTags():
     return tList
 
 def ask():
-    audioid = int("Audio id: ")
+    audioid = int(input("Audio id: "))
     if audioid:
         print("Fetching data..")
         robloxdata = getData(audioid)
-        if robloxdata:
-            print(f"Name: {robloxdata['name']}\nID: {audioid}")
+        if robloxdata != None:
+            print(f"Name: {robloxdata['Name']}\nID: {audioid}\nURL: https://create.roblox.com/store/asset/{audioid}")
             res = yorno("Is this correct?")
             if res == True:
                 #Get tags
@@ -40,12 +41,15 @@ def ask():
                 f = open('audiolist.json', 'r+')
                 jsondata = load(f)
                 jsondata['audios'].append({
-                    "name": robloxdata['name'],
+                    "name": robloxdata['Name'],
                     'id': audioid,
                     'tags': tags
                 })
-                dump(jsondata, f)
+                f.seek(0)
+                dump(jsondata, f, indent=4)
                 f.close()
+        else:
+            print("Failed to fetch")
     
     ask()
 

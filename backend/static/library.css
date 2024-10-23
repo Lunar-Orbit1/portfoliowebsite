@@ -89,9 +89,14 @@
 }
 
 #audiolist{
-    max-height: 25em;
     overflow-y: scroll;
+    max-height: 30em;
 }
 .container{
     height: fit-content;
+    max-height: 50em;
+    overflow-y: hidden;
+}
+.mainbody{
+    height: 90%;
 }

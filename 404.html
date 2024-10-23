@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>404</title>
+        <style>
+            :root{
+    --Highlight: #43bf9b;
+    --BG: #030503;
+    --Font-Secondary: nec_apc3,Tahoma; 
+}
+
+
+html{
+    font-size: 16px;
+}
+
+body{
+    background-color: var(--BG);
+    filter: opacity(90);
+    overflow-x:hidden;
+    margin: 0;
+}
+
+a{
+    color: #fff;
+    border-bottom: 1px dashed #fff; /*jenky!*/
+    text-decoration: none;
+}
+
+ul{
+    color: var(--Highlight);
+    list-style:square;
+    padding-left: 15px;
+}
+li{
+    margin-top: 3px;
+    color:#fff;
+    font-family: var(--Font-Secondary);
+}
+
+h1{
+    color: var(--Highlight);
+    font-family: 'VCR OSD Mono';
+    margin-top: 5px;
+}
+h2,h3{
+    color: #fff;
+    font-family: 'VCR OSD Mono';
+}
+p{
+    color: #fff;
+    font-family: var(--Font-Secondary);
+    font-weight: 50;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.mainbody{
+    display: grid;
+    width: 90%;
+    margin: auto;
+    grid-template-columns: subgrid;
+}
+.container{
+    background: none;
+    border: 2px solid var(--Highlight);
+    border-radius: 6px;
+    padding: 10px;
+    margin: 5px;
+}
+
+.btn1{
+    border: 2px var(--Highlight) solid;
+    font-family: var(--Font-Secondary);
+    text-wrap: nowrap;
+    width: fit-content;
+    padding:10px;
+    transition-duration: 100ms;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+.btn1:hover{
+    cursor: pointer;
+    background: var(--BG);
+    filter: brightness(150%);
+}
+
+  /* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+    /*Style*/
+    #cont2, #cont3, #cont1{
+        width: 90%;
+    }
+    .container{
+        display: block;
+        margin-bottom: 1em;
+    }
+    .mainbody{
+        display: block;
+    }
+}
+
+        </style>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="robots" content="index, follow, noarchive">
+        <meta name="description" content="Hi! I'm Emma, also known as Claym1x and I make things!">
+        <meta content="#ef78ff" data-react-helmet="true" name="theme-color" />
+    </head>
+    <body>
+        <div class="mainbody">
+            <div class="container" >
+                <img src="https://http.cat/404" height="400px">
+                <h1>404</h1>
+                <p>Http/404 - Page not found</p>
+                <p></p>
+                <a href="https://claym1x.com" class="btn1">Go home</a>
+            </div>
+        </div>
+    </body>
+</html>

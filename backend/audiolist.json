@@ -1,29 +1,263 @@
 {
     "audios": [
         {
-            "name": "Name",
-            "id": 0,
-            "tags": ["sample", "test"]
+            "name": "Clouds Finale",
+            "id": 1842333840,
+            "tags": [
+                "waiting",
+                "training",
+                "upbeat",
+                "energetic",
+                "jazz"
+            ]
         },
         {
-            "name": "Name",
-            "id": 0,
-            "tags": ["sample", "test"]
+            "name": "Nimbus",
+            "id": 1842333791,
+            "tags": [
+                "waiting",
+                "training",
+                "upbeat",
+                "energetic",
+                "electronic"
+            ]
         },
         {
-            "name": "Name",
-            "id": 0,
-            "tags": ["sample", "test"]
+            "name": "Throttle - Bloom",
+            "id": 7029024726,
+            "tags": [
+                "electronic",
+                "waiting",
+                "upbeat",
+                "pop",
+                "training"
+            ]
         },
         {
-            "name": "Name",
-            "id": 0,
-            "tags": ["sample", "test"]
+            "name": "The Family Store",
+            "id": 1837233542,
+            "tags": [
+                "whimsical",
+                "cartoon",
+                "upbeat",
+                "waiting",
+                "training"
+            ]
         },
         {
-            "name": "Name",
-            "id": 0,
-            "tags": ["sample", "test"]
+            "name": "Leisure Simulation Game",
+            "id": 1836057733,
+            "tags": [
+                "whimsical",
+                "cartoon",
+                "upbeat",
+                "waiting",
+                "training"
+            ]
+        },
+        {
+            "name": "Funk Street (A)",
+            "id": 1840534623,
+            "tags": [
+                "waiting",
+                "training",
+                "upbeat",
+                "jazz"
+            ]
+        },
+        {
+            "name": "Beethoven's Ode To Joy",
+            "id": 1846418194,
+            "tags": [
+                "folk",
+                "upbeat",
+                "waiting",
+                "classical",
+                "training"
+            ]
+        },
+        {
+            "name": "Cyber Space",
+            "id": 9046476113,
+            "tags": [
+                "sci-fi",
+                "science",
+                "thematic",
+                "future"
+            ]
+        },
+        {
+            "name": "Smooth Vibes (c)",
+            "id": 9044565954,
+            "tags": [
+                "jazz",
+                "electronic",
+                "chill",
+                "hip-hop",
+                "waiting",
+                "training"
+            ]
+        },
+        {
+            "name": "Zephyr",
+            "id": 1837658820,
+            "tags": [
+                "electronic",
+                "sci-fi",
+                "future",
+                "pop"
+            ]
+        },
+        {
+            "name": "Clair De Lune",
+            "id": 1838457617,
+            "tags": [
+                "piano",
+                "classical",
+                "sad",
+                "slow",
+                "calm"
+            ]
+        },
+        {
+            "name": "Roblox_RetroFluteMusic_01",
+            "id": 15930255433,
+            "tags": [
+                "upbeat",
+                "electronic",
+                "waiting",
+                "training",
+                "retro"
+            ]
+        },
+        {
+            "name": "Roselita",
+            "id": 1838857104,
+            "tags": [
+                "chill",
+                "upbeat",
+                "happy",
+                "waiting"
+            ]
+        },
+        {
+            "name": "Natural Blonde",
+            "id": 1842279786,
+            "tags": [
+                "chill",
+                "upbeat",
+                "happy",
+                "waiting"
+            ]
+        },
+        {
+            "name": "International Launch (A)",
+            "id": 1840086443,
+            "tags": [
+                "pop",
+                "electronic",
+                "pinewood",
+                "pb",
+                "pbssa"
+            ]
+        },
+        {
+            "name": "Pacific Freeway",
+            "id": 9043824673,
+            "tags": [
+                "jazz",
+                "classic",
+                "waiting"
+            ]
+        },
+        {
+            "name": "Hazy Days",
+            "id": 1842611594,
+            "tags": [
+                "jazz",
+                "calm",
+                "chill",
+                "waiting",
+                "training"
+            ]
+        },
+        {
+            "name": "California Beach",
+            "id": 9043854439,
+            "tags": [
+                "upbeat",
+                "happy",
+                "waiting",
+                "training"
+            ]
+        },
+        {
+            "name": "Coconut Crackers",
+            "id": 1845763392,
+            "tags": [
+                "happy",
+                "upbeat",
+                "jazz",
+                "waiting",
+                " traininf"
+            ]
+        },
+        {
+            "name": "Cherry Juice",
+            "id": 9043853947,
+            "tags": [
+                "happy",
+                "upbeat",
+                "waiting",
+                "training"
+            ]
+        },
+        {
+            "name": "Tokyo Drift",
+            "id": 1837015626,
+            "tags": [
+                "intense",
+                "pvp",
+                "combat",
+                "fighting",
+                "electronic",
+                "rock",
+                "lyrics"
+            ]
+        },
+        {
+            "name": "Mindwinder (b)",
+            "id": 1838075732,
+            "tags": [
+                "intense",
+                "pvp",
+                "combat",
+                "fighting",
+                "electronic",
+                "rock"
+            ]
+        },
+        {
+            "name": "Attic Rats E",
+            "id": 1845813528,
+            "tags": [
+                "rock",
+                "pvp",
+                "fighting",
+                "combat"
+            ]
+        },
+        {
+            "name": "Terminal Velocity",
+            "id": 1842802436,
+            "tags": [
+                "metal",
+                "rock",
+                "fighting",
+                "intense",
+                "combat",
+                "pvp"
+            ]
         }
     ]
 }

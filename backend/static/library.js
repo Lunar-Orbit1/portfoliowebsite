@@ -16,10 +16,10 @@ function convertListToString(list){
 }
 
 var audioListContainer;
-function newListItem(Name, ID, Tags, favorited){
+function newListItem(Name, ID, Tags){
     var div = document.createElement('div')
     div.className = "audioItem";
-    div.setAttribute('audioId', toString(ID))
+    div.setAttribute('audioId', ID)
 
     var nameBlock = document.createElement("p");
     nameBlock.style.display='inline-block';
