@@ -12,15 +12,16 @@
     </head>
     <body>
         <div class="mainbody">
-            <div class="container" >
+            <div class="container" id="mp">
                 <h1>Audio Library</h1>
                 <p>This is a library full of audios to use in PBCC, either on the boombox or for events <br>To add your own, please DM <code>claym1x</code><br>This site uses cookies to store your favorites. It does NOT use cookies for any other reason. This site is run solely by Claym1x. If have concerns contact her.</p>
                 <div class="filters">
-                    <input id="search" placeholder="Search">
+                    <input id="search" placeholder="Search" disable-browser-autofill="on">
                     <button class="filterBtn">Lyrics</button>
                     <button class="filterBtn">No Lyrics</button>
                     <button class="filterBtn">PBCC Audio</button>
                     <button class="filterBtn">Favorites</button>
+                    <button id="abtfilters" class="filterBtn" onclick="openAboutFiltersPage()">?</button>
                 </div>
                 <hr style="border: var(--Highlight) 1px solid;">
                 <div id="audiolist">
@@ -36,6 +37,20 @@
                     </div>
                 -->
                 </div>
+            </div>
+            <div class="container" id="abt" style="display: none;">
+                <h3>Searching</h3><button class="filterBtn" onclick="closeAboutFiltersPage()">Back</button><br>
+                <p>By default, searching will search in tags, it's name, and audioid.</p>
+                <p>You can search for multiple terms by seperating terms by commas. I.E: <code>lyrics, rock</code> will search for songs with lyrics or rock in the tags or name</p>
+                <p>If you want to search for everything WITHOUT a term, put an exclamation (!) in-front of the term. I.E: <code>!lyrics</code> will search for songs without lyrics in the tags or name</p>
+                <p>If you want to search a specific field, use an equals (=) sign. I.E: <code>tags=metal</code> will search for anything with the tag 'metal'</p>
+                <p>Valid fields include:</p>
+                <ul>
+                    <li>ID</li>
+                    <li>Name</li>
+                    <li>Tags</li>
+                    <li>Favorite</li>
+                </ul>
             </div>
         </div>
     </body>

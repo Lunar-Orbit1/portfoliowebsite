@@ -24,6 +24,10 @@
 .filterBtn:active{
     border: 2px solid #fff;
 }
+#abtfilters{
+    aspect-ratio: 1 / 1;
+    height: 34px;
+}
 .audioItem{
     border: 2px solid var(--Highlight);
     border-radius: 6px;
@@ -31,7 +35,7 @@
     background-size: cover;
     margin-bottom: 10px;
 }
-.audioItem h3, p, button{
+.audioItem h3, p, button, a{
     margin-top: 5px;
     margin-bottom: 5px;
 }
@@ -63,31 +67,6 @@
     background: url("/static/share.svg");
 }
 
-#popup{
-    position: fixed;
-    right: -12em;
-    bottom: 10px;
-    background-color: #152215;
-    width: 10em;
-    height: fit-content;
-    padding: 5px;
-    border-radius: 5px;
-    transition-duration: 500ms;
-}
-#ptitle{
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
-#pdur{
-    width: calc(100% + 10px);
-    background-color: var(--Highlight);
-    height: 3px;
-    margin-left: -5px;
-    margin-bottom: -5px;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-}
-
 #audiolist{
     overflow-y: scroll;
     max-height: 30em;
@@ -99,4 +78,11 @@
 }
 .mainbody{
     height: 90%;
+}
+
+code{
+    background-color: #000;
+    border-radius: 5px;
+    padding: 2px;
+    border: var(--Highlight) 1px solid;
 }
