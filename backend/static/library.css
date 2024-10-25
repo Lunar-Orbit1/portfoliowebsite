@@ -86,3 +86,11 @@ code{
     padding: 2px;
     border: var(--Highlight) 1px solid;
 }
+#popup{
+    position: fixed;
+    height: 2em;
+    width: 25em;
+    background: #000;
+    right: auto;
+    left: auto;
+}
