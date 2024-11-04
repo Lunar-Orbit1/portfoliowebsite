@@ -1,10 +1,12 @@
 const endpoint = `http://127.0.0.1:5000/getids`
 var audios = [];
 
-function notify(title, text, duration){
-    document.getElementById("ptitle").innerHTML = title;
+function notify(text, duration){
     document.getElementById("ptext").innerHTML = text
-    document.getElementById("pdur").style.width = "calc(100% + 10px)"
+    document.getElementById('popup').style.top = '2em';
+    window.setTimeout(() => {
+        document.getElementById('popup').style.top = '-7em';
+    }, duration*1000);
 }
 
 function openAboutFiltersPage(){
@@ -23,6 +25,10 @@ function convertListToString(list){
     }
     return ns.slice(0, -2);
 }
+function ltrim(str) {
+    if(!str) return str;
+    return str.replace(/^\s+/g, '');
+  }
 
 function showId(id, hideothers){
     var children = document.getElementById('audiolist').children;
@@ -65,6 +71,7 @@ function searchList(ar, term){
             return true
         }
     }
+    return false;
 }
 
 function search_st2(inputTerm){
@@ -139,7 +146,7 @@ function search_st1(inputTerm){
     inputTerm = inputTerm.toLowerCase();
     var splt = inputTerm.split(',');
     for (var x in splt){
-        search_st2(splt[x]);
+        search_st2(ltrim(splt[x]));
     }
 
 }
