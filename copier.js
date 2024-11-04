@@ -1,4 +1,4 @@
-const currentTimeOffset = "-7";
+const currentTimeOffset = "-8";
 document.addEventListener("DOMContentLoaded", function(){
     const discordBtn = document.getElementById("dbutton")
     discordBtn.addEventListener("click", function(){
